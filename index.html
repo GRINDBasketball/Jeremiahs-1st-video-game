@@ -235,14 +235,14 @@ x.fillStyle='#e8c390';x.beginPath();x.arc(-34,24,6.5,0,7);x.fill();x.beginPath()
 x.fillStyle='#7cfc00';rr(-20,-2,40,16,5);
 x.fillStyle='#ff3b4a';rr(-20,12,40,12,4);
 x.fillStyle='#ff8cc8';rr(-18,22,36,14,5);
-x.strokeStyle='#c9a227';x.lineWidth=3;x.beginPath();x.moveTo(0,-64);x.lineTo(0,-80);x.stroke();
-x.fillStyle='#ff6b9a';x.beginPath();x.arc(0,-82,5.5,0,7);x.fill();x.fillStyle='#fff';x.beginPath();x.arc(-1.5,-83.5,2,0,7);x.fill();
-x.fillStyle='#f0d18a';x.beginPath();x.ellipse(0,-36,32,28,0,0,7);x.fill();x.strokeStyle='#c9a227';x.lineWidth=4;x.stroke();
-x.fillStyle='#fff';x.beginPath();x.ellipse(-11,-40,9,12,0,0,7);x.fill();x.beginPath();x.ellipse(11,-40,9,12,0,0,7);x.fill();
-x.fillStyle='#ff8c00';x.beginPath();x.ellipse(-11,-38,5,7.5,0,0,7);x.fill();x.beginPath();x.ellipse(11,-38,5,7.5,0,0,7);x.fill();
-x.fillStyle='#3a1a00';x.beginPath();x.ellipse(-11,-38,2.4,3.6,0,0,7);x.fill();x.beginPath();x.ellipse(11,-38,2.4,3.6,0,0,7);x.fill();
-x.fillStyle='#fff';x.beginPath();x.arc(-13,-43,2.1,0,7);x.fill();x.beginPath();x.arc(9,-43,2.1,0,7);x.fill();
-x.strokeStyle='#8a4b1f';x.lineWidth=2.6;x.lineCap='round';x.beginPath();x.arc(0,-28,13,.2,Math.PI-.2);x.stroke();
+x.fillStyle='#f0d18a';x.strokeStyle='#c9a227';x.lineWidth=4;x.lineJoin='round';x.beginPath();x.moveTo(-44,-68);x.lineTo(44,-68);x.lineTo(0,-2);x.closePath();x.fill();x.stroke();
+x.strokeStyle='#c9a227';x.lineWidth=3;x.lineCap='round';x.beginPath();x.moveTo(0,-68);x.lineTo(0,-84);x.stroke();
+x.fillStyle='#ff6b9a';x.beginPath();x.arc(0,-86,5.5,0,7);x.fill();x.fillStyle='#fff';x.beginPath();x.arc(-1.5,-87.5,2,0,7);x.fill();
+x.fillStyle='#fff';x.beginPath();x.ellipse(-11,-44,9,12,0,0,7);x.fill();x.beginPath();x.ellipse(11,-44,9,12,0,0,7);x.fill();
+x.fillStyle='#ff8c00';x.beginPath();x.ellipse(-11,-42,5,7.5,0,0,7);x.fill();x.beginPath();x.ellipse(11,-42,5,7.5,0,0,7);x.fill();
+x.fillStyle='#3a1a00';x.beginPath();x.ellipse(-11,-42,2.4,3.6,0,0,7);x.fill();x.beginPath();x.ellipse(11,-42,2.4,3.6,0,0,7);x.fill();
+x.fillStyle='#fff';x.beginPath();x.arc(-13,-47,2.1,0,7);x.fill();x.beginPath();x.arc(9,-47,2.1,0,7);x.fill();
+x.strokeStyle='#8a4b1f';x.lineWidth=2.6;x.lineCap='round';x.beginPath();x.arc(0,-30,11,.25,Math.PI-.25);x.stroke();
 x.restore()}
 function drawBoss(){if(!boss||(boss.hp<=0&&(boss.fall||0)>260))return;const flash=boss.hurt>0&&(t>>2)%2;const yb=boss.fall||0;
 x.save();x.translate(boss.x,boss.y+yb);x.scale(boss.f||1,1);
